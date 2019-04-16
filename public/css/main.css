@@ -25,7 +25,7 @@
     opacity: 1; } }
 @keyframes animated-dot-svg {
   0% {
-    transform: scale(0.7); }
+    transform: scale(0); }
   100% {
     transform: scale(1); } }
 nav {
@@ -46,8 +46,8 @@ nav {
     nav ul li a {
       color: white;
       font-size: 20px; }
-  nav ul:nth-child(3) {
-    margin-left: 10%; }
+  nav li:nth-child(2) {
+    margin-left: 15%; }
   nav svg {
     width: 400px;
     z-index: 10;
@@ -69,7 +69,10 @@ nav {
 
 .point-svg {
   animation: animated-dot-svg 2s;
-  fill: #333333 !important; }
+  fill: #6463f7 !important; }
+
+.top-logo {
+  fill: #FFFFFF !important; }
 
 section:nth-child(1) {
   height: 100vh;
@@ -173,6 +176,9 @@ footer {
   footer svg {
     width: 310px;
     fill: #6463f7; }
+
+.bottom-logo {
+  fill: #6463f7; }
 
 body, html {
   height: 400vh;

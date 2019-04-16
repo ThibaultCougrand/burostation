@@ -3,7 +3,7 @@
     0%
         top: 35px
         left: 0
-        
+
     15%
         top: 4px
     25%
@@ -28,7 +28,7 @@
 
 @keyframes animated-dot-svg
     0%
-        transform: scale(0.7)
+        transform: scale(0)
     100%
         transform: scale(1)
 
@@ -37,6 +37,7 @@ nav
     height: 10vh
     background-color: rgba(255, 255, 255, 0)
     width: 90%
+   
     margin: auto
     ul
         p
@@ -48,12 +49,12 @@ nav
         li
             list-style-type: none
             margin-top: 5vh
+            //margin-left: 5%
             a
                 color: white
                 font-size: 20px
-    ul:nth-child(3)
-        margin-left: 10%
-        
+    li:nth-child(2)
+        margin-left: 15%      
     svg 
         width: 400px
         z-index: 10
@@ -74,5 +75,8 @@ nav
 
 .point-svg
     animation: animated-dot-svg 2s 
-    fill: #333333 !important
+    fill: #6463f7 !important
+
+.top-logo
+    fill: #FFFFFF !important
 
