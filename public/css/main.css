@@ -1,15 +1,14 @@
-section:nth-child(1) {
-  height: 100vh;
-  width: 100%;
-  background-image: url("../img/3.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center; }
-
+@keyframes animated-dot-svg {
+  0% {
+    transform: scale(0.7); }
+  100% {
+    transform: scale(1); } }
 nav {
   padding-top: 1%;
   height: 10vh;
-  background-color: rgba(255, 255, 255, 0); }
+  background-color: rgba(255, 255, 255, 0);
+  width: 90%;
+  margin: auto; }
   nav ul p {
     color: white;
     font-size: 30px;
@@ -22,6 +21,38 @@ nav {
     nav ul li a {
       color: white;
       font-size: 20px; }
+  nav ul:nth-child(3) {
+    margin-left: 10%; }
+  nav svg {
+    width: 400px;
+    z-index: 10;
+    margin-left: 1%; }
+
+.absolute-pic {
+  position: absolute;
+  width: 50%;
+  top: -10px;
+  left: 0px;
+  opacity: 1; }
+
+.point {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 0.5%;
+  opacity: 0; }
+
+.point-svg {
+  animation: animated-dot-svg 2s 2s;
+  fill: #333333 !important; }
+
+section:nth-child(1) {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/3.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 form {
   margin-top: 5%;
@@ -49,21 +80,6 @@ form {
   border: none !important;
   margin: 3% auto auto auto; }
 
-.absolute-pic {
-  position: absolute;
-  width: 50%;
-  top: -10px;
-  left: 0px;
-  opacity: 1; }
-
-.point {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 0.5%;
-  animation: point-qui-bouge 2s 2s forwards linear;
-  opacity: 0; }
-
 .logo {
   width: 10px;
   height: 67px;
@@ -89,31 +105,6 @@ form {
 input {
   min-width: 200px; }
 
-@keyframes point-qui-bouge {
-  0% {
-    top: 35px;
-    left: 0; }
-  15% {
-    top: 4px; }
-  25% {
-    top: 0px;
-    opacity: 0.3; }
-  35% {
-    top: 4px;
-    opacity: 0.6; }
-  50% {
-    top: 35px;
-    opacity: 0.9; }
-  65% {
-    top: 4px; }
-  75% {
-    top: 0px; }
-  85% {
-    top: 4px; }
-  100% {
-    top: 35px;
-    left: 417px;
-    opacity: 1; } }
 section:nth-child(2) {
   height: 100vh;
   width: 100%;
@@ -128,8 +119,8 @@ section:nth-child(3) {
 
 .button-section {
   background-color: white;
-  width: 101.9%;
-  height: 19vh; }
+  width: 100%;
+  height: 20vh; }
   .button-section button {
     margin: auto;
     width: 400px;
@@ -142,7 +133,7 @@ section:nth-child(4) {
 
 footer {
   height: 200px;
-  background-color: brown; }
+  background-color: #e6e7e8; }
   footer img {
     width: 250px; }
   footer ul {
@@ -151,8 +142,12 @@ footer {
       list-style: none; }
   footer i {
     color: #6463f7;
-    font-size: 20px;
-    padding-top: 60px; }
+    font-size: 30px;
+    padding-top: 60px;
+    margin-left: 40px; }
+  footer svg {
+    width: 310px;
+    fill: #6463f7; }
 
 body, html {
   height: 400vh;
